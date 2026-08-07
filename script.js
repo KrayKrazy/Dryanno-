@@ -42,15 +42,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // 4. Before & After Slider Logic
-    const sliderRange = document.getElementById('sliderRange');
-    if (sliderRange) {
-        const sliderBefore = document.querySelector('.comparison-slider__before');
-        const sliderHandle = document.querySelector('.comparison-slider__handle');
+    const sliders = document.querySelectorAll('.comparison-slider');
+    sliders.forEach(slider => {
+        const sliderRange = slider.querySelector('.comparison-slider__range');
+        const sliderBefore = slider.querySelector('.comparison-slider__before');
+        const sliderHandle = slider.querySelector('.comparison-slider__handle');
 
-        sliderRange.addEventListener('input', (e) => {
-            const value = e.target.value;
-            sliderBefore.style.width = `${value}%`;
-            sliderHandle.style.left = `${value}%`;
-        });
-    }
+        if (sliderRange && sliderBefore && sliderHandle) {
+            sliderRange.addEventListener('input', (e) => {
+                const value = e.target.value;
+                sliderBefore.style.width = `${value}%`;
+                sliderHandle.style.left = `${value}%`;
+            });
+        }
+    });
 });

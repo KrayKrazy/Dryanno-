@@ -207,14 +207,35 @@
                 <p class="section__subtitle" style="margin-top: 15px;">Arraste para o lado e veja a magia da transformação acontecer diante dos seus olhos.</p>
             </div>
             
-            <div class="comparison-slider glass mx-auto">
-                <img src="img/after.jpg" alt="Depois do Tratamento" class="comparison-slider__img after-img">
-                <div class="comparison-slider__before">
-                    <img src="img/before.jpg" alt="Antes do Tratamento" class="comparison-slider__img before-img">
+            <div class="comparison-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 40px;">
+                <!-- Lisos Slider -->
+                <div class="comparison-slider glass mx-auto" style="margin: 0; width: 100%; height: 500px;">
+                    <div class="comparison-title" style="position: absolute; top: 30px; left: 0; width: 100%; z-index: 50; text-align: center;">
+                        <span style="background: rgba(0,0,0,0.7); padding: 8px 20px; border-radius: 30px; font-family: var(--font-heading); font-size: 1.2rem; border: 1px solid rgba(212,175,55,0.3);" class="text-gold-gradient">Lisos Espelhados</span>
+                    </div>
+                    <img src="img/after.jpg" alt="Depois do Tratamento" class="comparison-slider__img after-img">
+                    <div class="comparison-slider__before">
+                        <img src="img/before.jpg" alt="Antes do Tratamento" class="comparison-slider__img before-img">
+                    </div>
+                    <input type="range" min="0" max="100" value="50" class="comparison-slider__range" aria-label="Controle de Antes e Depois">
+                    <div class="comparison-slider__handle">
+                        <i class="fa-solid fa-arrows-left-right"></i>
+                    </div>
                 </div>
-                <input type="range" min="0" max="100" value="50" class="comparison-slider__range" id="sliderRange" aria-label="Controle de Antes e Depois">
-                <div class="comparison-slider__handle">
-                    <i class="fa-solid fa-arrows-left-right"></i>
+                
+                <!-- Cachos Slider -->
+                <div class="comparison-slider glass mx-auto" style="margin: 0; width: 100%; height: 500px;">
+                    <div class="comparison-title" style="position: absolute; top: 30px; left: 0; width: 100%; z-index: 50; text-align: center;">
+                        <span style="background: rgba(0,0,0,0.7); padding: 8px 20px; border-radius: 30px; font-family: var(--font-heading); font-size: 1.2rem; border: 1px solid rgba(212,175,55,0.3);" class="text-gold-gradient">Cachos Definidos</span>
+                    </div>
+                    <img src="img/after_curly.jpg" alt="Depois do Tratamento" class="comparison-slider__img after-img">
+                    <div class="comparison-slider__before">
+                        <img src="img/before_curly.jpg" alt="Antes do Tratamento" class="comparison-slider__img before-img">
+                    </div>
+                    <input type="range" min="0" max="100" value="50" class="comparison-slider__range" aria-label="Controle de Antes e Depois">
+                    <div class="comparison-slider__handle">
+                        <i class="fa-solid fa-arrows-left-right"></i>
+                    </div>
                 </div>
             </div>
         </div>
