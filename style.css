@@ -662,4 +662,13 @@ img {
         background: rgba(0, 0, 0, 0.9);
         padding: 20px 0;
     }
+
+    /* Ajustes Mobile para Sliders */
+    .comparison-slider {
+        height: 350px !important;
+    }
+    
+    .comparison-grid {
+        gap: 20px !important;
+    }
 }
