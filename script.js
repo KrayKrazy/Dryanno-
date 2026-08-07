@@ -40,4 +40,17 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // 4. Before & After Slider Logic
+    const sliderRange = document.getElementById('sliderRange');
+    if (sliderRange) {
+        const sliderBefore = document.querySelector('.comparison-slider__before');
+        const sliderHandle = document.querySelector('.comparison-slider__handle');
+
+        sliderRange.addEventListener('input', (e) => {
+            const value = e.target.value;
+            sliderBefore.style.width = `${value}%`;
+            sliderHandle.style.left = `${value}%`;
+        });
+    }
 });

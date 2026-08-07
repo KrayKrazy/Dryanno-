@@ -197,18 +197,24 @@
         </div>
     </section>
 
-    <!-- Photo Slider Placeholder -->
-    <section class="gallery section">
+    <!-- Before & After Slider Section -->
+    <section class="before-after section" id="resultados">
         <div class="container" data-aos="fade-up">
             <div class="section__header text-center">
-                <span class="section__tag">Ambiente</span>
-                <h2 class="section__title">Nosso Espaço</h2>
+                <span class="section__tag">Resultados Reais</span>
+                <h2 class="section__title text-gold-gradient">Antes e Depois</h2>
                 <div class="section__divider mx-auto"></div>
+                <p class="section__subtitle" style="margin-top: 15px;">Arraste para o lado e veja a magia da transformação acontecer diante dos seus olhos.</p>
             </div>
             
-            <div class="gallery__slider-wrapper glass">
-                <div class="gallery__track">
-                    <img src="img/hero_v2.jpg" alt="Interior do Salão" class="gallery__img">
+            <div class="comparison-slider glass mx-auto">
+                <img src="img/after.jpg" alt="Depois do Tratamento" class="comparison-slider__img after-img">
+                <div class="comparison-slider__before">
+                    <img src="img/before.jpg" alt="Antes do Tratamento" class="comparison-slider__img before-img">
+                </div>
+                <input type="range" min="0" max="100" value="50" class="comparison-slider__range" id="sliderRange" aria-label="Controle de Antes e Depois">
+                <div class="comparison-slider__handle">
+                    <i class="fa-solid fa-arrows-left-right"></i>
                 </div>
             </div>
         </div>
